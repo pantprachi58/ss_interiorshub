@@ -29,16 +29,16 @@ export default function RootLayout({ children }) {
         
         {/* Contact Icons HTML */}
         <div className="contact-icons-container">
-          {/* WhatsApp Icon for 9990447773 */}
+          {/* WhatsApp Icon for 7827097773 */}
           <a 
-            href="https://wa.me/919990447773" 
+            href="https://wa.me/917827097773" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="contact-icon whatsapp"
-            aria-label="Contact via WhatsApp - 9990447773"
+            aria-label="Contact via WhatsApp - 7827097773"
           >
             <i className="fab fa-whatsapp"></i>
-            <span className="contact-tooltip">WhatsApp: 9990447773</span>
+            <span className="contact-tooltip">WhatsApp: 7827097773</span>
           </a>
           
           {/* Call Icon for 7827097773 */}

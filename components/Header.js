@@ -37,12 +37,12 @@ export default function Header() {
                             
                         </div>
                         <div className="header-right-wrap">
-                            <a href="tel:+919990447773" className="header-contact">
+                            <a href="tel:+917827097773" className="header-contact">
                                 <span className="icon"><i className="fa-regular fa-phone"></i></span>
                                 <span className="content">
                                     <span className="call-text">Call Us Phone</span>
-                                    <span className="call-number">+91 9990447773</span><br/>
-                                     <span className="call-number">+91 7827097773</span>
+                                    <span className="call-number">+91 7827097773</span><br/>
+                                     
 
 
                                 </span>
@@ -122,8 +122,8 @@ export default function Header() {
                         </li>
                         <li>
                             <i className="fa-solid fa-phone" style={{ color: '#1a1a1a' }}></i>
-                            <a href="tel:+919990447773">+91 9990447773</a><br/>
-                            <a href="tel:+917827097773">+91 7827097773</a>
+                            <a href="tel:+917827097773">+91 7827097773</a><br/>
+    
                         </li>
                         <li>
                             <i className="fa-solid fa-envelope" style={{ color: '#1a1a1a' }}></i>
@@ -195,8 +195,8 @@ export default function Header() {
                         </li>
                         <li>
                             <i className="fas fa-phone"></i>
-                            <a href="tel:+919990447773">+91 9990447773</a><br/>
-                            <a href="tel:+917827097773">+91 7827097773</a>
+                            <a href="tel:+917827097773">+91 7827097773</a><br/>
+                            
                         </li>
                         <li>
                             <i className="fas fa-envelope-open-text"></i>

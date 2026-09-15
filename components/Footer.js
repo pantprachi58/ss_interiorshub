@@ -44,7 +44,7 @@ export default function Footer() {
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-widget">
                             <div class="footer-address">
-                                <a class="number" href="tel:+919990447773">+91 9990447773</a>
+                                <a class="number" href="tel:+917827097773">+91 7827097773</a>
                                 <a class="mail" href="mailto:Sethiinteriors1@gmail.com">Sethiinteriors1@gmail.com</a>
                                 <ul class="social-list">
                                     <li><a href="#">Facebook</a></li>

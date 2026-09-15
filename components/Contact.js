@@ -52,8 +52,8 @@ export default function Contact() {
         
        
         // WhatsApp requires: country code + phone number without + sign
-        // Example: Indian number +91 9990447773 becomes 919990447773
-        const whatsappNumber = '919990447773'; // Country code +91, remove the + sign
+        // Example: Indian number +91 7827097773 becomes 917827097773
+        const whatsappNumber = '917827097773'; // Country code +91, remove the + sign
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
         
         window.open(whatsappUrl, '_blank');
@@ -350,13 +350,13 @@ export default function Contact() {
 
                 {submitStatus === 'success' && (
                   <div className="status-message success-message">
-                    <strong>Success!</strong> WhatsApp is opening with your message. Please send it to +91 9990447773. We'll respond shortly.
+                    <strong>Success!</strong> WhatsApp is opening with your message. Please send it to +91 7827097773. We'll respond shortly.
                   </div>
                 )}
 
                 {submitStatus === 'error' && (
                   <div className="status-message error-message-box">
-                    <strong>Error!</strong> Failed to process your message. Please try again or contact us directly at +91 9990447773.
+                    <strong>Error!</strong> Failed to process your message. Please try again or contact us directly at +91 7827097773.
                   </div>
                 )}
 

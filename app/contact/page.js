@@ -69,11 +69,11 @@ export default function ContactPage() {
                         <h3 className="contact-info-title">Phone</h3>
                         <p className="contact-info-text">Contact SS Interiorshub 
                         </p>
-                        <a href="tel:+919990447773" className="contact-info-link">
-                          +91 9990447773 <i className="fa-solid fa-phone"></i>
+                        <a href="tel:+917827097773" className="contact-info-link">
+                          +91 7827097773 <i className="fa-solid fa-phone"></i>
                         </a>
                         {/* <div className="mt-3">
-                          <a href="https://wa.me/919990447773" target="_blank" rel="noopener noreferrer" className="contact-info-link" style={{ background: '#25D366', color: 'white', padding: '8px 15px', borderRadius: '5px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                          <a href="https://wa.me/917827097773" target="_blank" rel="noopener noreferrer" className="contact-info-link" style={{ background: '#25D366', color: 'white', padding: '8px 15px', borderRadius: '5px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                             <i className="fa-brands fa-whatsapp"></i> Message on WhatsApp
                           </a>
                         </div> */}
