@@ -1,12 +1,21 @@
-import Link from 'next/link';
+"use client";
 
 export default function Header() {
   const handleNavClick = (e, target) => {
     e.preventDefault();
+
+    // These sections only exist on the home page. From any other route the
+    // link has to take us home first, otherwise the click does nothing.
+    const section = document.querySelector(target);
+    if (!section) {
+      window.location.href = `/${target}`;
+      return;
+    }
+
     if (window.ScrollSmoother && window.ScrollSmoother.get()) {
       window.ScrollSmoother.get().scrollTo(target, true, 'top top');
     } else {
-      document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -18,7 +27,7 @@ export default function Header() {
                     <div className="primary-header-inner">
                         <div className="header-left-wrap">
                             <div className="header-logo d-lg-block">
-                                <a href="index-2.html">
+                                <a href="/">
                                     {/* <h5 className="text-white">SS Interiorshub</h5> */}
                                     <h5 className="text-white">SS Interiorshub</h5>
                                 </a>
@@ -26,7 +35,7 @@ export default function Header() {
                             <div className="header-menu-wrap">
                                 <div className="mobile-menu-items" suppressHydrationWarning>
                                     <ul suppressHydrationWarning>
-                                        <li><Link href="/">Home</Link></li>
+                                        <li><a href="/">Home</a></li>
                                         <li><a href="#services" onClick={(e) => handleNavClick(e, '#services')}>Services</a></li>
                                         <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')}>About Us</a></li>
                                         <li><a href="#products" onClick={(e) => handleNavClick(e, '#products')}>Products</a></li>
@@ -48,7 +57,7 @@ export default function Header() {
                                 </span>
                             </a>
                             <div className="header-btn-wrap">
-                                <Link href="/contact" className="tl-primary-btn header-btn">Get in Touch</Link>
+                                <a href="/contact" className="tl-primary-btn header-btn">Get in Touch</a>
                             </div>
                             {/* <div className="search-icon dl-search-icon">
                                 <i className="fa-solid fa-magnifying-glass"></i>
@@ -132,7 +141,7 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className="sidebar-get-in-touch" style={{marginTop: '30px', marginBottom: '30px', textAlign: 'center'}}>
-                    <Link href="/contact" className="tl-primary-btn white-btn" style={{
+                    <a href="/contact" className="tl-primary-btn white-btn" style={{
                         display: 'inline-flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -168,7 +177,7 @@ export default function Header() {
                                 transition: 'all 0.3s ease-in-out'
                             }}></i>
                         </span>
-                    </Link>
+                    </a>
                 </div>
                 <ul className="side-menu-social">
                     <li className="facebook"><a href="#"><i className="fab fa-facebook-f"></i></a></li>
@@ -180,7 +189,7 @@ export default function Header() {
         </div><div id="sidebar-overlay"></div><div className="mobile-side-menu">
             <div className="side-menu-content">
                 <div className="side-menu-head">
-                    <a href="index-2.html"><h5 className="text-white">SS Interiorshub</h5></a>
+                    <a href="/"><h5 className="text-white">SS Interiorshub</h5></a>
                     <button className="mobile-side-menu-close"><i className="fa-regular fa-xmark"></i></button>
                 </div>
                 <div className="side-menu-wrap"></div>
@@ -204,11 +213,11 @@ export default function Header() {
                         </li>
                         <li>
                             <i className="fas fa-external-link-alt"></i>
-                            <Link href="/contact" className="contact-page-link">Visit Contact Page</Link>
+                            <a href="/contact" className="contact-page-link">Visit Contact Page</a>
                         </li>
                     </ul>
                     <div className="mobile-get-in-touch-btn" style={{marginTop: '25px', textAlign: 'center'}}>
-                        <Link href="/contact" className="tl-primary-btn white-btn" style={{
+                        <a href="/contact" className="tl-primary-btn white-btn" style={{
                             display: 'inline-flex',
                             alignItems: 'center',
                             justifyContent: 'center',
@@ -244,7 +253,7 @@ export default function Header() {
                                     transition: 'all 0.3s ease-in-out'
                                 }}></i>
                             </span>
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <ul className="side-menu-social">
